@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(11, 31, 44);
+}
+
+img {
+    width: 280px;
+    height: 80px;
+}
+
+.logo {
+    display: block;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.top::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.portal {
+    float: centre;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 40%;
+    -webkit-animation: spin 6s linear infinite;
+    -moz-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#the {
+    font-family: 'Shadows Into Light';
+    font-size: 60px;
+    color: rgb(181, 221, 240);
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+#wiki {
+    font-family: 'Shadows Into Light';
+    font-size: 60px;
+    color: rgb(181, 221, 240);
+    margin-left: 58%;
+    margin-top: -18%;
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+
+.search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+    margin-top: 60px;
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid blue
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: blue
+}
+
+#search:hover {
+    background-color: rgb(26, 153, 111);
+    color: black;
+}
